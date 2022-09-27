@@ -1,0 +1,16 @@
+file_id	root_ids	root_names	root_name_annotations
+rt_11	R-HSA-74160	Gene expression	GE
+rt_12	R-HSA-168256	Immune system	IS
+rt_13	R-HSA-1430728	Metabolism	M
+rt_14	R-HSA-162582	Signal transduction	ST
+rt_21	R-HSA-74160,R-HSA-168256	Gene expression,Immune system	GE+IS
+rt_22	R-HSA-74160,R-HSA-1430728	Gene expression,Metabolism	GE+M
+rt_23	R-HSA-74160,R-HSA-162582	Gene expression,Signal transduction	GE+ST
+rt_24	R-HSA-168256,R-HSA-1430728	Immune system,Metabolism	IS+M
+rt_25	R-HSA-168256,R-HSA-162582	Immune system,Signal transduction	IS+ST
+rt_26	R-HSA-1430728,R-HSA-162582	Metabolism,Signal transduction	M+ST
+rt_31	R-HSA-74160,R-HSA-168256,R-HSA-1430728	Gene expression,Immune system,Metabolism	GE+IS+M
+rt_32	R-HSA-74160,R-HSA-168256,R-HSA-162582	Gene expression,Immune system,Signal transduction	GE+IS+ST
+rt_33	R-HSA-74160,R-HSA-1430728,R-HSA-162582	Gene expression,Metabolism,Signal transduction	GE+M+ST
+rt_34	R-HSA-168256,R-HSA-1430728,R-HSA-162582	Immune system,Metabolism,Signal transduction	IS+M+ST
+rt_41	R-HSA-74160,R-HSA-168256,R-HSA-1430728,R-HSA-162582	Gene expression,Immune system,Metabolism,Signal transduction	GE+IS+M+ST

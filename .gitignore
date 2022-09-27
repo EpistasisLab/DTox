@@ -1,2 +1,4 @@
 #  Set which folder NOT to sync to GitHub. e.g. /tmp 
 /tmp
+/code/process
+/data/example/result

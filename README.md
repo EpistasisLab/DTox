@@ -1,16 +1,38 @@
-# template-repository
-This is a template repository for EpistasisLab members. Click the "Use this template" button in the [project page](https://github.com/EpistasisLab/template-repository) to start your own project! 
+# *DTox*: Deep learning for Toxicology
 
-* Make your project private. You need to get permission from Jason to make it public, if necessary, you can eaisly duplicate this project, rename it and remove irrelvant content before making it public.
-* Please document important project information (paper, data, code etc.) in your project repository so other lab members can easily reproduce your work.
-* Do NOT record credentials! All public/private repositories are visible to lab members. 
-* Large data and licensed data (e.g. UK biobank) should ONLY be saved under directory /project/moore on LPC.
+**Yun Hao, Joseph D. Romano, and Jason H. Moore**
+
+**University of Pennsylvania, Cedars-Sinai Medical Center**
+
+DTox paper: https://doi.org/10.1016/j.patter.2022.100565
+
+Analysis repository: https://github.com/yhao-compbio/DTox (codes and datasets to reproduce the results of DTox paper)
+
+In drug development, a major reason for attrition is the lack of understanding of cellular mechanisms governing drug toxicity. The black-box nature of conventional classification models has limited their utility in identifying toxicity pathways. Here we developed DTox (Deep learning for Toxicology), an interpretation framework for knowledge-guided neural networks, which can predict compound response to toxicity assays and infer toxicity pathways of individual compounds. We demonstrate that DTox can achieve the same level of predictive performance as conventional models with a significant improvement in interpretability. Using DTox, we were able to rediscover mechanisms of transcription activation by three nuclear receptors, recapitulate cellular activities induced by aromatase inhibitors and PXR agonists, and differentiate distinctive mechanisms leading to HepG2 cytotoxicity. Virtual screening by DTox revealed that compounds with predicted cytotoxicity are at higher risk for clinical hepatic phenotypes. In summary, DTox provides a framework for deciphering cellular mechanisms of toxicity in silico. 
 
 ## File Structure
 ```
 .
-├── docs                # Docs related to this project, e.g. paper, emails...
-├── data                # Data related to this project, e.g. raw data info, results... NOTE: large data goes on LPC
-├── code                # Code for data Analysis, app development
-└── tmp                 # Temporary data ignored by git. See ".gitignore"
+├── docs               	# DTox documentation
+├── data                # DTox data  
+├── code                # DTox code 
+└── tmp                 # Temporary data ignored by git. See ".gitignore" 
 ```
+
+## Setup
+
+The conda environment for DTox is specified in `environment.yml`. To build and activate this environment, run:
+
+```shell
+# conda version 4.7.5
+conda env create --file environment.yml
+
+conda activate DTox
+```
+
+Once the conda environment is created, users can implement DTox as instructed in the [tutorial](DTox-implementation.ipynb). To open the tutorial with jupyter notebook, run 
+
+```shell
+jupyter notebook
+```
+
