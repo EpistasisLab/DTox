@@ -1,0 +1,4 @@
+node_file:data/reactome/hierarchy/rt_41_ps_5_re_0_st_0_node.tsv
+path_file:data/example/result/all_paths.txt
+pathway_relevance_file:data/example/result/module_relevance.tsv
+relevance_fdr_file:data/example/result/path_relevance_pv.tsv
